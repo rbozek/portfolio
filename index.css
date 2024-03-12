@@ -23,6 +23,8 @@
 }
 
 :root {
+    
+    --font-size-xs: 1.2rem;
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
     --font-size-medium: 2.8rem;
@@ -470,6 +472,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__text {
     flex: 0 0 30%;
+}
+
+/* #RB added: */
+.work__guestcreds {
+    font-size: var(--font-size-xs);
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.2; 
+
 }
 
 .work__list {
