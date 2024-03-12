@@ -560,8 +560,11 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* #RB adjust max-width & height */
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+    max-width: 500px;
+    height: auto;
 }
 
 @media(min-width: 901px) {
