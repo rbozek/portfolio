@@ -17,137 +17,244 @@
 
 <body>
 
-  <!-- ***** Header ***** -->
+<!-- ***** Header ***** -->
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#portfolio" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+<header class="header" role="banner" id="top">
+  <div class="row">
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#portfolio" class="nav__link">Work</a></li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__text-box row">
+    <div class="header__text">
+      <h1 class="heading-primary">
+        <span>Rich Bozek</span>
+      </h1>
+      <p>A Web Developer based in Nyack, NY.</p>
+      <a href="#contact" class="btn btn--orange">Get in touch</a>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Rich Bozek</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Nyack, NY.</p>
-        <a href="#contact" class="btn btn--orange">Get in touch</a>
-      </div>
-    </div>
-  </header>
+  </div>
+</header>
 
-  <main role="main">
+<main role="main">
 
-    <!-- ***** Work ***** -->
+<!-- ***** Work ***** -->
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+<section class="work" id="work">
+  <div class="row">
+    <h2>My Work</h2>
+    <div class="work__boxes">
 
-          <!-- 1 project: -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>HomeWrangler</h3>
-              <p>
-                An app created to lessen mental strain from repetitive household shopping & repairs.
-              </p>
-              <ul class="work__list">
-                <li>HTML / CSS3 / JavaScript</li>
-                <li>React / Mongoose / Express</li>
-                <li>MongoDB / Postman / JWT Auth</li>
-              </ul>
+      <!-- project container - HomeWrangler: -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>HomeWrangler</h3>
+          <p>
+            An app created to lessen mental strain from repetitive household shopping & repairs.
+          </p>
+          <ul class="work__list">
+            <li>HTML / CSS3 / JavaScript</li>
+            <li>React / Mongoose / Express</li>
+            <li>MongoDB / Postman / JWT Auth</li>
+          </ul>
 
-              <p class="work__guestcreds">
-                <span style="font-weight: 800; font-style: italic;">Guest Credentials</span><br>
-                user: guest<br>
-                pw: g-u-e-s-t-p-a-s-s-w-o-r-d (remove dashes)
-              </p>
+          <p class="work__guestcreds">
+            <span style="font-weight: 800;">created with</span> 
+              <a href="https://github.com/natnichols" title="View on GitHub" target="_blank">Nat Nichols</a> &
+              <a href="https://github.com/shawnkang0818" title="View on GitHub" target="_blank">Shawn Kang</a>
+            <br><br>
+          </p>
 
-              <div class="work__links">
-                <a href="https://homewrangler.netlify.app" target="_blank" class="link__text">
-                  Launch<span>&rarr;</span>
-                </a>
-                <a href="https://github.com/rbozek/homewrangler-front-end" title="View on GitHub" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
+          <p class="work__guestcreds">
+            <span style="font-weight: 800; font-style: italic;">Guest Credentials</span><br>
+            user: guest<br>
+            pw: g-u-e-s-t-p-a-s-s-w-o-r-d (remove dashes)
+          </p>
+
+          <div class="work__links">
+            <a href="https://homewrangler.netlify.app" target="_blank" class="link__text">
+              Launch<span>&rarr;</span>
+            </a>
+            <a href="https://github.com/rbozek/homewrangler-front-end" title="View on GitHub" target="_blank">
+              <img src="./images/github.svg" class="work__code" alt="GitHub">
+            </a>
           </div>
-
-
-          
-        <!-- end of work__boxes -->
+        <!-- end of work-text -->
         </div> 
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              I'm a passionate and detail-oriented autodidact focused on full-stack web design. I have 15+ years of creative collaborations in audio and video production, design, photography, education, and artist/tour management. I take pride in my reputation for adaptability, reliability, and maintaining positive relationships with clients and colleagues.
-            </p>
-            <!-- ADD RESUME -->
-            <a href="#" class="btn">My Resume</a>
-            <a href="https://github.com/rbozek" class="btn" target="_blank">GitHub</a>
-          </div>
-
-          <div class="about__photo-container">
-            <img
-              class="about__photo"
-              src="./images/me/rb-tricolor.png"
-              alt=""
-            />
-          </div>
-
+        <div class="work__image-box">
+          <img src="./images/projects/screenshot-homewrangler-home.png" class="work__image" alt="HomeWrangler screenshot" />
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- ***** Contact ***** -->
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Always open for work opportunities, collaboration, compliments, or film recommendations. Say hi!
-        </p>
-        <a href="mailto:rbozek@gmail.com" class="btn">rbozek (at) gmail.com</a>
-        <a href="https://www.linkedin.com/in/richbozek/" class="btn" target="_blank">LinkedIn</a>
+      <!-- project container - Reps: -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>Reps</h3>
+          <p>
+            An app created to lessen mental strain from repetitive household shopping & repairs.
+          </p>
+          <ul class="work__list">
+            <li>add languages</li>
+            <li>add languages</li>
+            <li>add languages</li>
+          </ul>
+
+          <p class="work__guestcreds">
+            <span style="font-weight: 800; font-style: italic;">Guest Credentials</span><br>
+            user: tbd<br>
+            pw: t-b-d (remove dashes)
+          </p>
+
+          <div class="work__links">
+            <a href="DEPLOYED LINK" target="_blank" class="link__text">
+              Launch<span>&rarr;</span>
+            </a>
+            <a href="GITHUB LINK" title="View on GitHub" target="_blank">
+              <img src="./images/github.svg" class="work__code" alt="GitHub">
+            </a>
+          </div>
+        </div>
+        <div class="work__image-box">
+          <img src="./images/projects/screenshot-reps-landing.png" class="work__image" alt="Reps screenshot" />
+        </div>
       </div>
+
+
+      <!-- project container - Shelver: -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>Shelver</h3>
+          <p>
+            description here.
+          </p>
+          <ul class="work__list">
+            <li>add languages</li>
+            <li>add languages</li>
+            <li>add languages</li>
+          </ul>
+
+          <p class="work__guestcreds">
+            <span style="font-weight: 800; font-style: italic;">Guest Credentials</span><br>
+            user: tbd<br>
+            pw: t-b-d (remove dashes)
+          </p>
+
+          <div class="work__links">
+            <a href="DEPLOYED LINK" target="_blank" class="link__text">
+              Launch<span>&rarr;</span>
+            </a>
+            <a href="GITHUB LINK" title="View on GitHub" target="_blank">
+              <img src="./images/github.svg" class="work__code" alt="GitHub">
+            </a>
+          </div>
+        </div>
+        <div class="work__image-box">
+          <img src="./images/projects/screenshot-shelver-landing.png" class="work__image" alt="Shelver screenshot" />
+        </div>
+      </div>
+
+
+      <!-- project container - Quiz: -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>Shelver</h3>
+          <p>
+            description here.
+          </p>
+          <ul class="work__list">
+            <li>add languages</li>
+            <li>add languages</li>
+            <li>add languages</li>
+          </ul>
+
+          <p class="work__guestcreds">
+            <span style="font-weight: 800; font-style: italic;">Guest Credentials</span><br>
+            user: tbd<br>
+            pw: t-b-d (remove dashes)
+          </p>
+
+          <div class="work__links">
+            <a href="DEPLOYED LINK" target="_blank" class="link__text">
+              Launch<span>&rarr;</span>
+            </a>
+            <a href="GITHUB LINK" title="View on GitHub" target="_blank">
+              <img src="./images/github.svg" class="work__code" alt="GitHub">
+            </a>
+          </div>
+        </div>
+        <div class="work__image-box">
+          <img src="./images/projects/screenshot-humanquiz.png" class="work__image" alt="Be a Great Human Quiz screenshot" />
+        </div>
+      </div>
+
+      
+    <!-- end of work__boxes -->
+    </div> 
+  </div>
+</section>
+
+<!-- ***** About ***** -->
+
+<section class="about" id="about">
+  <div class="row">
+    <h2>About Me</h2>
+    <div class="about__content">
+      <div class="about__text">
+        <p>
+          I'm a passionate and detail-oriented autodidact focused on full-stack web design. I have 15+ years of creative collaborations in audio and video production, design, photography, education, and artist/tour management. I take pride in my reputation for adaptability, reliability, and maintaining positive relationships with clients and colleagues.
+        </p>
+        <!-- ADD RESUME -->
+        <a href="#" class="btn">My Resume</a>
+        <a href="https://github.com/rbozek" class="btn" target="_blank">GitHub</a>
+      </div>
+
+      <div class="about__photo-container">
+        <img
+          class="about__photo"
+          src="./images/me/rb-tricolor.png"
+          alt=""
+        />
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+</main>
 
-  <!-- ***** Footer ***** -->
+<!-- ***** Contact ***** -->
 
-  <!-- <footer role="contentinfo" class="footer"> -->
-      <!-- <p>Thanks for stopping by!</p> -->
-  <!-- </footer> -->
+<section class="contact" id="contact">
+  <div class="row">
+    <h2>Get in Touch</h2>
+    <div class="contact__info">
+      <p>
+        Always open for work opportunities, collaboration, compliments, or film recommendations. Say hi!
+      </p>
+      <a href="mailto:rbozek@gmail.com" class="btn">rbozek (at) gmail.com</a>
+      <a href="https://www.linkedin.com/in/richbozek/" class="btn" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</section>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+<!-- ***** Footer ***** -->
+
+<!-- <footer role="contentinfo" class="footer"> -->
+    <!-- <p>Thanks for stopping by!</p> -->
+<!-- </footer> -->
+
+<a href="#top" class="back-to-top" title="Back to Top">
+  <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+</a>
+<script src="./index.js"></script>
 </body>
 
 </html>
