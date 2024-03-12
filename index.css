@@ -38,7 +38,8 @@
 
     --black: #000;
     --pink: #ff3258;
-    /* --pink: #dc8000; */  <-- orange to use later
+    /* RB added: */
+    --orange: #dc8000;  
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -153,7 +154,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--orange);
     margin: var(--gutter-small) 0;
 }
 
@@ -204,7 +205,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--orange);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -213,7 +214,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--orange);
 }
 
 .btn {
@@ -222,7 +223,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--orange);
     font-weight: 400;
 }
 
@@ -246,20 +247,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--orange);
 }
 
-.btn--pink {
-    background: var(--pink);
+.btn--orange {
+    background: var(--orange);
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--orange::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
+.btn--orange:hover,
+.btn--orange:focus {
     background: transparent;
 }
 
@@ -269,7 +270,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--orange);
 }
 
 .link__text::after {
@@ -292,7 +293,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--orange);
 }
 
 .link__text span {
@@ -311,7 +312,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--orange);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -393,13 +394,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--orange);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--orange);
 }
 
 /* --------------------------------------- */
