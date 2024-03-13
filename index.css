@@ -258,6 +258,7 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
+/* RB added: */
 .link__simple {
     border-bottom: 1px solid var(--orange);
     text-decoration: none;
