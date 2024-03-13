@@ -264,7 +264,9 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
 }
 .link__simple:hover {
-    border-top: 1px solid var(--orange);
+    /* border-top: 1px solid var(--orange); */
+    background-color: var(--orange);
+    /* color: var(--white) */
     /* text-decoration: strikethrough; */
 }
 
