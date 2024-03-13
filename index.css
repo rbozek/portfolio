@@ -226,11 +226,9 @@ body:not(.user-is-tabbing) a:focus {
     border: 1px solid  var(--orange);
     font-weight: 400;
 }
-
 .btn:focus {
     outline: none;
 }
-
 .btn::after {
     content: '';
     display: block;
@@ -243,26 +241,33 @@ body:not(.user-is-tabbing) a:focus {
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
-
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
     background: var(--orange);
 }
-
 .btn--orange {
     background: var(--orange);
     transition: all 0.2s;
 }
-
 .btn--orange::after {
     display: none;
 }
-
 .btn--orange:hover,
 .btn--orange:focus {
     background: transparent;
 }
+
+.link__simple {
+    border-bottom: 1px solid var(--orange);
+    text-decoration: none;
+}
+.link__simple:hover {
+    border-top: 1px solid var(--orange);
+    /* text-decoration: strikethrough; */
+}
+
+
 
 .link__text {
     position: relative;
@@ -272,7 +277,6 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     border-bottom: 1px solid var(--orange);
 }
-
 .link__text::after {
     content: '';
     display: block;
@@ -285,11 +289,9 @@ body:not(.user-is-tabbing) a:focus {
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
-
 .link__text:focus {
     outline: none;
 }
-
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
