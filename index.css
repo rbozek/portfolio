@@ -601,7 +601,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer {
     text-align: center;
-    padding: var(--gutter-medium) 0 var(--gutter-normal);
+    padding: var(--gutter-medium) 50px var(--gutter-normal) 50px;
 }
 
 .footer__social-links {
