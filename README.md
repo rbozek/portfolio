@@ -1,5 +1,7 @@
 This is the public portfolio for top-tier megahuman Rich Bozek.
 
+View portfolio: [HERE](https://rbozek.netlify.app/ "Rich's portfolio")
+Visit Rich's LinkedIn: [HERE](https://www.linkedin.com/in/richbozek/ "Rich's LinkedIn")
 
 
 
