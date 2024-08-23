@@ -8,5 +8,6 @@ Here's where you can find me:
 
 <br />
 <br />
-
+<br />
+:pencil2:
 This portfolio sprung from a template created by [Nisar Hassan Naqvi](https://github.com/nisarhassan12 "Nisar's GitHub"). It was well-designed and I recommend you go give him a follow.
