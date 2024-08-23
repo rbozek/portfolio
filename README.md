@@ -1,12 +1,14 @@
 This is the public portfolio for top-tier megahuman Rich Bozek.
 
+<br />
+
 Relevant links:
 ### [:computer: Web Dev Portfolio](https://rbozek.netlify.app "Rich's Portfolio")
 ### [:office: LinkedIn](https://www.linkedin.com/in/richbozek "Rich's LinkedIn")
 ### [:musical_note: Art & Music](https://www.richbozek.com "Rich's Art & Music")
 
 
-<br />
+
 <br />
 <br />
 :pencil2:
