@@ -99,15 +99,11 @@ body {
 
 @media(max-width: 600px) {
     .row {
-        padding: 0 var(--gutter-normal);
-    }
-}
-
-@media(max-width: 600px) {
-    .row {
+        /* padding: 0 var(--gutter-normal); */
         padding: 0 var(--gutter-small);
     }
 }
+
 
 section {
     padding: var(--gutter-huge) 0;
