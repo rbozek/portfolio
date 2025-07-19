@@ -1,0 +1,358 @@
+/* below is CSS reset - "zeroes out" all values to make consistent across all browsers */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style:decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+/* end of CSS reset */
+
+
+
+body {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #FFFFD3;
+	color: #000; 
+	width: 100%; }
+a {
+	color: none;
+	background: none;
+	text-decoration: none; }
+
+h1 { 
+	color: #000;
+	font-size: 30px;
+	font-weight: none;
+	text-align: center;
+	text-decoration: none;
+	font-variant: small-caps;
+	padding: 5px; }
+h2 { 
+	color: #000;
+	font-size: 20px;
+	font-weight: none;
+	text-align: center;
+	text-decoration: none;
+	font-variant: small-caps;
+	padding: 5px; }
+ol {
+	list-style-position: inside;
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: none;
+	text-align: left;
+	font-variant: none;}
+ol li { padding: 0px; 
+	text-indent: 0px; }
+
+p.normal {
+	font-size: 16px;
+	font-weight: none;
+	text-align: left;
+	font-variant: none;
+	margin: 0;
+	padding: 5px 15px 5px 15px;}
+p.centered {
+	font-size: 16px;
+	font-weight: none;
+	text-align: center;
+	font-variant: none;
+	margin: 0;
+	padding: 5px 15px 5px 15px;}
+p.tiny {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px;
+	padding-left: 25px;
+	padding-top: 0px;
+	padding-bottom: 0px;}
+p.tinycentered {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px;
+	padding-bottom: 0;}
+p.clear {
+	margin: 0px;
+	padding: 0px;
+	padding-top: 20px;
+	float: none;
+	clear: both; }
+img.normal {
+	margin: 5px 10px 5px 10px;
+	border: 2px #000 solid; }
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration: underline; }
+a:visited {
+	color: #666;
+	font-weight: bold;
+	text-decoration: underline; }
+a:hover {
+	color: #FFF;
+	background: #000;
+	font-weight: bold;
+	text-decoration: none; }
+a:active {
+	color: #000;
+	background: #000;
+	font-weight: bold;
+	text-decoration: none;}
+
+
+
+
+div.nav_container {
+	width: 600px;
+	min-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px #000 solid;
+	border-bottom: 0px; }
+div.nav_container a:link {
+	color: none;
+	text-decoration: none; }
+div.nav_container a:visited {
+	color: none;
+	text-decoration: none; }
+div.nav_container a:hover {
+	color: none;
+	background: none;
+	text-decoration: none; }
+div.nav_container a:active {
+	color: none;
+	background: none;
+	text-decoration: none; }
+div#forman_logo_container {
+	width: 100%; 
+	height: 235px;}
+div#forman_logo {
+	height: 36px; 
+	overflow: hidden;
+	zoom: 1; }
+img#forman_logo {
+	position: relative;
+	top: 0px; }
+img#forman_logo:hover {
+	position: relative;
+	top: -36px; }		
+div#nav_menu {
+	text-align: center;
+	height: 40px;
+	overflow: hidden; }
+ul#nav_menu {
+	position: relative;
+	top: 0px; 
+	margin: 0px;
+	padding: 0px;}
+ul#nav_menu li {
+	display: inline; 
+	position: relative; 
+	top: 0px; }
+ul#nav_menu li:hover {
+	display: inline; 
+	position: relative; 
+	top: -40px; }
+
+
+
+div.main_container {
+	background: #FFF; 
+	width: 600px;
+	min-height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px #000 solid;
+	border-top: 0px; 
+	border-bottom: 0px;}
+
+	
+	
+div.bottom_container {
+	background: #FFF url(images/bottom/bottom.png) scroll no-repeat center bottom; 
+	width: 600px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px #000 solid;
+	border-top: 0px; 
+	text-align: center;}
+div#social_media_container {
+	margin-top: 25px;
+	padding: 0px;
+	width:220px;
+	height: 66px; 
+	overflow: hidden;
+	zoom: 1;
+	float: right;
+	text-align: center;}
+img#social_media {
+	position: relative;
+	top: 0px; 
+	padding: 0px;}
+img#social_media:hover {
+	position: relative;
+	top: -66px; 
+	padding: 0px;}
+div#mailing_list_container {
+	margin:0px;
+	padding-top:25px;
+	width:380px; }
+div#mailing_list {
+	height: 36px; 
+	overflow: hidden;
+	zoom: 1; }
+img#mailing_list {
+	position: relative;
+	top: 0px; }
+img#mailing_list:hover {
+	position: relative;
+	top: -36px; }
+	
+	
+div.copyright_container {
+	margin-top: 25px;
+	padding: 0px;
+	color: #000;
+	font-size: 12px;
+	font-weight: none;
+	text-align: center;
+	text-decoration: none;
+	font-variant: small-caps; }
+
+
+
+
+/* MUSIC MUSIC MUSIC */
+/* MUSIC MUSIC MUSIC */
+/* MUSIC MUSIC MUSIC */
+div.music_tracklist {
+	float:right;
+	width: 325px;
+	padding-top: 5px;
+	text-align: left;}
+a.lyric_title {
+	font-weight: bold;}
+	
+	
+/* MEDIA MEDIA MEDIA */
+/* MEDIA MEDIA MEDIA */
+/* MEDIA MEDIA MEDIA */
+img.media_img_thumb {
+	margin: 0px;
+	padding: 0px;
+	border: 2px #000 solid;}
+h2.media_titles {  /* it's actually the same as regular h2, but this was in case I want to easily change it later */
+	color: #000;
+	font-size: 20px;
+	font-weight: none;
+	text-align: left;
+	text-decoration: none;
+	font-variant: small-caps;
+	padding: 5px; 
+	padding-bottom: 0px;}
+div#media_padding {
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:auto;
+	margin-right:auto;}
+	
+/* LINKS LINKS LINKS */
+/* LINKS LINKS LINKS */
+/* LINKS LINKS LINKS */
+ul.links_page {
+	list-style-position: inside;
+	margin: 0px;
+	padding-left: 20px;
+	font-size: 16px;
+	font-weight: none;
+	text-align: left;
+	font-variant: none;}
+
+
+
+/* MERCH MERCH MERCH */
+/* MERCH MERCH MERCH */
+/* MERCH MERCH MERCH */
+div.merch_item {
+	margin: 5px 10px 5px 10px;
+	background: #DDD; 
+	padding: 10px;}
+div.merch_item:hover {
+	background:#aaa; }
+h2.merch_item {  /* it's actually the same as regular h2, but this was in case I want to easily change it later */
+	color: #000;
+	font-size: 20px;
+	font-weight: none;
+	text-align: center;
+	text-decoration: none;
+	font-variant: small-caps;
+	padding: 5px; }
+div.merch_image_container {
+	width: 250px;
+	height: 249px; 
+	margin: 0px;
+	border: 4px solid #000;
+	overflow: hidden;
+	zoom: 1; }
+img.merch_image {
+	position: relative;
+	top: 0px;}
+img.merch_item:hover {
+	position: relative;
+	top: -250px;}
+div.merch_text_container {
+	float:right;
+	width: 300px; 
+	margin: 0px;
+	border: none;
+	text-align: center;
+	overflow: hidden;
+	zoom: 1; }
+	
+
+
+/* MERCH BUTTONS */
+div.merch_button_container {
+	height: 32px; 
+	overflow: hidden;
+	zoom: 1; }
+.merch_button {
+	position: relative;
+	top: 0px; }
+.merch_button:hover {
+	position: relative;
+	top: -32px; }
+#cart_bottom_spacing {
+	width: 580px;
+	background: #DDD;
+	margin-bottom: 50px;
+	margin-left:auto;
+	margin-right:auto;}
+#cart_bottom_spacing:hover {
+	background:#aaa; }
+	
+/* ALBUM FOR SALE OTHER PLACES */
+div.album_other_button_container {
+	text-align: center;
+	height: 60px; 
+	overflow: hidden;
+	zoom: 1; }
+.album_other_button {
+	position: relative;
+	top: 0px; }
+.album_other_button:hover {
+	position: relative;
+	top: -60px; }
+

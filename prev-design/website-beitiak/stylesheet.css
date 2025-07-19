@@ -1,0 +1,54 @@
+
+body {height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	background-image: url("bottom_image.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;}
+
+	
+div#header {
+ position:absolute;
+ top:10;
+ left:10;
+ width:*;
+ height:50%;
+ text-align: left;
+	font-color: white;
+	font-family: "Courier New";
+	font-size: 70px;
+	font-weight: normal;
+	scrolling: no;}
+	
+div#menu {
+ position:absolute;
+ top:90;
+ left:10;
+ width:150px;
+ height:200px;
+ text-align: left;
+	font-color: white;
+	font-family: "Courier New";
+	font-size: 20px;
+	font-weight: normal;
+	scrolling: no; }
+
+
+a.menulink:link { color: white; 
+	text-decoration: none;}
+a.menulink:visited { color: white; 
+	text-decoration: none;}
+a.menulink:active { color: white; 
+	text-decoration: none;}
+a.menulink:hover { color: white; 
+	text-decoration: none;}
+a.menulink: { color: white; 
+	text-decoration: none;}
+
+
+
+
+
+

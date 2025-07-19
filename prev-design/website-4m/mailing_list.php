@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+<!-- this will ensure the page is displayed in the 
+most current version of IE, instead of going into 
+Compatibility Mode and displaying it in an older version.
+also, put this BEFORE other tags in head sect -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>
+forman.
+</title>
+
+<link href="master_forman.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="nav_container" style="background: #FFF url(images/nav/nav_bill_close.png) scroll no-repeat center top;">
+
+
+<!--beginning of logo container -->
+<div id="forman_logo_container" span style="text-align: right;">
+<!-- kept SPAN style so I could easily position differently for each page without referencing the style sheet -->
+<span style="position: relative; top: 90px; left:-20px">
+<div id="forman_logo">
+<a href="index.html"><img id="forman_logo" src="images/nav/forman_logo.gif"></a>
+</div>
+</span>
+</div> <!-- end of logo container -->
+
+
+
+<div id="nav_menu">
+
+<ul id="nav_menu">
+<li><a href="music.html"><img src="images/nav/music.gif"></a></li>
+<li><a href="media.html"><img src="images/nav/media.gif"></a></li>
+<li><a href="support.html"><img src="images/nav/support.gif"></a></li>
+<li><a href="links.html"><img src="images/nav/links.gif"></a></li>
+</ul>
+
+</div> <!--end of nav_menu-->
+
+</div> <!--end of entire nav container-->
+
+
+
+
+
+
+<div class="main_container">
+
+<h1>MAILING LIST</h1>
+   
+   
+<p class="normal">      
+<?PHP
+$email = $_POST['email'];
+$subject="MAILING LIST";
+$message = $_POST['message'];
+//formanband@gmail.com
+
+$target_address = 'formanband@gmail.com';
+$headers = "From: ".$email."\r\n". "X-Mailer: php";
+
+if (mail($target_address, $subject, $message, $headers)) {
+echo("Thanks for joining! We'll only send you occasional e-mails about shows, recordings, videos, and other tidbits. NO SPAM. You can unsubscribe at any time.");
+}
+else{
+echo("Your e-mail address could not be submitted. Please try again below, or e-mail us directly at formanband@gmail.com. Sorry for the inconvenience!");
+die();
+}
+?>
+
+</p> <!-- end of big paragraph -->
+
+
+<p class="clear"></p></div> <!-- end of main container (including fix for clearing any remaining floated images -->
+
+
+
+
+
+<div class="bottom_container">
+
+
+<div id="social_media_container">
+<a href="http://www.facebook.com/formanband" target="_blank"><img src="images/bottom/social_media_facebook.gif" id="social_media"></a>&nbsp;<a href="http://www.reverbnation.com/formanband" target="_blank"><img src="images/bottom/social_media_reverbnation.gif" id="social_media"></a>&nbsp;<a href="https://www.youtube.com/playlist?list=PLADWqx09z-7-wLGoBsWVsFCcsOo6tYnxb" target="_blank"><img src="images/bottom/social_media_youtube.gif" id="social_media"></a>  
+</div> <!-- end of social media container -->
+
+
+<div id="mailing_list_container">
+<div id="mailing_list">
+<img src="images/bottom/mailing_list.gif" id="mailing_list">
+</div>
+
+<form action='mailing_list.php' method='POST' style="margin:0px; padding:0px;">
+<label for='email'><span style="font-family: Verdana;"><span style="font-size: 18px;"><!-- this is normally where text/image would go--></span></span> </label><input type='text' name='email'> 
+<input type='submit' name='submit' value='Enter e-mail'>
+</div> <!-- end of mailing list container -->
+
+
+<span style="clear: all;">&nbsp;</span> 
+
+</div> <!-- end of bottom container -->
+
+<div class="copyright_container">
+All content &copy; 2012 Forman except where noted</br>Web design by <a href="http://www.richbozek.com" target="_blank">Rich Bozek</a> | Navigation photos by M Schmidt & <a href="http://www.nickirving.com/" target="_blank">N Irving</a></br>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+/* below is CSS reset - "zeroes out" all values to make consistent across all browsers */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style:decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+/* end of CSS reset */
+
+
+/* general site-wide stuff */
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	background: #FFF url(images/tech/background_paint.png) scroll repeat-y center top; 
+	color: #000; 
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	width: 100%; 
+	height: 100%; }
+h1.big {
+	font-size: 40px;
+	font-family: Impact;
+	text-align: right; }
+h2.medium {
+	font-size: 30px;
+	font-family: Impact;
+	text-align: right; }
+h3.tiny {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right; }
+h4.between {
+	font-size: 25px;
+	font-family: Impact;
+	text-align: right; }
+p {
+	font-size: 16px;
+	padding-bottom:10px; }
+a:link { color: #AA0000; }
+a:visited { color: #AA0000; }
+a:hover {
+	color: #000;
+	background: #FF9922; }
+a:active { 
+	color: #FF9922;
+	background: #000; }
+div.page_content {
+	width: 650px;
+	clear: right;
+	margin-left: auto;
+	margin-right: 10px;
+	text-align: right;}
+div.mailing_list {
+	width: 550px;
+	padding-top: 100px;
+	padding-bottom: 0px;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 10px;}
+div.site_info {
+	padding: 0px;
+	padding-top: 60px;
+	text-align: right;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left:auto;
+	margin-right: 10px; }
+/* end of general side-wide stuff */
+
+
+
+/* front page */
+body#front_page {
+	font-family: Tahoma, Geneva, sans-serif;
+	background: #FFF; 
+	color: #000; 
+	margin: 0px;
+	margin-bottom: 30px;
+	padding: 0px;
+	width: 100%; 
+	height: 100%; }
+div#front_tiger_nest {
+	margin-top:50px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto; }
+div#front_tiger_image {  /* trying this for IE6 transparency issue - previously had tiger image as the background of "front_tiger_wrapper", but I read that the transparency fix doesnt work for background images */
+	position: absolute;  /* this keeps the image in place behind the menu */
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	height: 530px;
+	overflow: visible; }
+div#front_menu {
+	position: relative;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	height: 530px;
+	overflow: visible; }
+
+div.front_nav_image_container {
+	height: 60px; 
+	overflow: hidden; 
+	zoom: 1; }
+img.front_nav_image:hover {
+	position: relative;
+	top: -60px;}
+img.front_nav_image:active {
+	position: relative;
+	top: -120px;}
+div#front_page_content {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	width: 500px; }
+div#new_album_ad {
+	position: absolute; 
+	width: 360px;
+	height: 140px;
+	border: 3px #000 dotted;
+	padding: 0px;
+	text-align: center;
+	background: none;
+	overflow:hidden;
+	zoom:1;
+	top: 35px;
+	left: 200px;}
+/* end of front page stuff */
+
+
+
+
+/* "other" nav stuff  */
+ul.nav_other {
+	list-style-type: none;
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	height: 40px;
+	overflow: hidden;
+	zoom: 1; }
+ul#nav_other_position {
+	float: right;
+	clear: right; }
+ul#nav_social_media_position {
+	position: fixed;
+	left: 20px;
+	bottom: 20px; }
+ul#nav_social_media_position_front_page {
+	align: right;
+	margin-bottom: 5px; }
+ul.nav_other li {
+	display: inline;
+	padding: 0px;
+	margin: 0px;}
+/* next 4 lines are to remove formatting of regular page/text links */
+ul.nav_other a:link { color: none; background:none; text-decoration: none; }
+ul.nav_other a:visited { color: none; background:none; text-decoration: none; }
+ul.nav_other a:hover { color: none; background:none; text-decoration: none; }
+ul.nav_other a:active { color: none; background:none; text-decoration: none; }
+img.nav_other {
+	position: relative; 
+	top: 0px; }
+img.nav_other:hover {
+	position: relative; 
+	top: -40px; }
+img.nav_other:active {
+	position: relative; 
+	top: -80px; }
+/* code below is to scribble out the one nav option of the current page (i.e. in "support" page, make ONLY "support" button scribbled  */
+img.nav_image_current_page {
+	position: relative;
+	top: -80px;}
+img.nav_image_current_page:hover {
+	position: relative;
+	top: -40px;}
+img.nav_image_current_page:active {
+	position: relative;
+	top: -80px;}
+
+div#nav_other_tiger {
+	width: 225px;
+	height: 140px;
+	overflow: visible;}
+/* below is to remove formatting of regular page/text links */
+div#nav_other_tiger a:link { color: none; background:none; text-decoration: none; }
+div#nav_other_tiger a:visited { color: none; background:none; text-decoration: none; }
+div#nav_other_tiger a:hover { color: none; background:none; text-decoration: none; }
+div#nav_other_tiger a:active { color: none; background:none; text-decoration: none; }
+/* end of "other" nav stuff */
+
+
+
+
+/* beginning of SHOWS stuff */
+#showtable {
+	width: 600px;
+	border: 1px solid #000;
+	margin-left: auto;
+	margin-right: 0px;} /* this is how to right-align table */
+#showtable th {
+	background: #CCC;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	border: 0; 
+	border-bottom: 1px solid #000; }
+#showtable td {
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+	border: 0; 
+	border-bottom: 1px solid #000 }
+#showtable col.date {
+	min-width: 100px; }
+#showtable col.venue {
+	min-width: 200px; }
+#showtable col.info {
+	min-width: 300px; }
+td.date {
+	font-size: 14px; }
+/* end of SHOWS stuff */
+
+
+
+
+/*  beginning of SUPPORT stuff */
+div.digital_music_links {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	overflow: hidden;
+	zoom: 1; }
+div.digital_music_links a:link { color: none; background:none; text-decoration: none; }
+div.digital_music_links a:visited { color: none; background:none; text-decoration: none; }
+div.digital_music_links a:hover { color: none; background:none; text-decoration: none; }
+div.digital_music_links a:active { color: none; background:none; text-decoration: none; }
+img.digital_music_links {
+	position: relative; 
+	top: 0px; }
+img.digital_music_links:hover {
+	position: relative; 
+	top: -50px; }
+img.digital_music_links:active {
+	position: relative; 
+	top: -100px; }
+
+/* end of SUPPORT stuff */
+
+
+
+/*  PRIVATE PARTY SECTION  */
+
+body.rltrio {
+	font-family: Tahoma, Geneva, sans-serif;
+	background: #FFF url(images/rltriopage/gray_background.jpg) scroll repeat center top; 
+	color: #000; 
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	width: 100%; 
+	height: 100%; }
+
+div.page_content_rltrio {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;}
+h1.big_rltrio {
+	font-size: 40px;
+	font-family: Impact;
+	text-align: center; }
+h2.medium_rltrio {
+	font-size: 30px;
+	font-family: Impact;
+	text-align: center; }
+h3.small_rltrio {
+	font-size: 12px;
+	font-family: Impact;
+	text-align: center; }
+h4.between_rltrio {
+	font-size: 25px;
+	font-family: Impact;
+	text-align: center; }
+
+/* end of private paries */
