@@ -538,27 +538,54 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
+/* Rich additions 2026-02 */
+.client__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* make each grid cell a square */
+.client__grid a {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+/* force image to fill the square */
+.client__grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.client__grid a:hover img {
+    opacity: 0.80;
+}
+
+
+/*    ALL BELOW was active when I came to update my Client Work section 2026-02. Leaving in case I want to re-use later.
 .client__logos {
     display: flex;
     justify-content: space-between;
     filter: invert(100%) grayscale(100%) opacity(.8);
 }
-
 .client__logo {
     height: 6.5rem;
     max-width: 18rem;
 }
-
 @media(max-width: 1240px) {
     .client__logos {
         overflow-x: scroll;
         padding: var(--gutter-normal);
     }
-
     .client__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
     }
-}
+}  
+    */
 
 /* --------------------------------------- */
 /* ----- About ----- */
