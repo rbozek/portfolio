@@ -462,6 +462,10 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
+.work__box img:hover {
+    opacity: 0.80;
+}
+
 @media(max-width: 900px) {
     .work__box {
         align-items: initial;
